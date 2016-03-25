@@ -1,0 +1,228 @@
+EESchema Schematic File Version 2
+LIBS:74xx
+LIBS:switcher
+LIBS:adc-dac
+LIBS:analog-switches
+LIBS:atmel
+LIBS:bjt
+LIBS:can
+LIBS:capacitive
+LIBS:cmos4000
+LIBS:conn
+LIBS:device
+LIBS:digital-audio
+LIBS:digpot
+LIBS:diode
+LIBS:display
+LIBS:fet
+LIBS:hc11
+LIBS:i2c
+LIBS:inductive
+LIBS:intel
+LIBS:interface
+LIBS:linear
+LIBS:memory
+LIBS:microchip
+LIBS:opto
+LIBS:periph
+LIBS:power
+LIBS:protection
+LIBS:regul
+LIBS:renesas
+LIBS:resist
+LIBS:supervisor
+LIBS:video
+LIBS:figaro
+LIBS:radio
+LIBS:automation
+LIBS:graphic
+LIBS:xilinx
+LIBS:optoendstops
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R_Small R3
+U 1 1 56F4CB27
+P 4200 2400
+F 0 "R3" H 4230 2420 50  0000 L CNN
+F 1 "2.2K" H 4230 2360 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 4200 2400 50  0001 C CNN
+F 3 "" H 4200 2400 50  0000 C CNN
+	1    4200 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 56F4CB5F
+P 4825 2725
+F 0 "R2" H 4855 2745 50  0000 L CNN
+F 1 "1K" H 4855 2685 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 4825 2725 50  0001 C CNN
+F 3 "" H 4825 2725 50  0000 C CNN
+	1    4825 2725
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 56F4CB8C
+P 4350 3050
+F 0 "R1" H 4380 3070 50  0000 L CNN
+F 1 "180R" H 4380 3010 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 4350 3050 50  0001 C CNN
+F 3 "" H 4350 3050 50  0000 C CNN
+	1    4350 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 56F4CBBD
+P 3875 2675
+F 0 "D1" H 3875 2775 50  0000 C CNN
+F 1 "LED" H 3875 2575 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 3875 2675 50  0001 C CNN
+F 3 "" H 3875 2675 50  0000 C CNN
+	1    3875 2675
+	0    1    1    0   
+$EndComp
+$Comp
+L OPTO-ENDSTOP IC1
+U 1 1 56F4CBEF
+P 4475 4000
+F 0 "IC1" H 4475 4250 60  0000 C CNN
+F 1 "OPTO-ENDSTOP" H 4475 3750 60  0000 C CNN
+F 2 "optoendstops:TCST1103-2103" H 4475 4000 60  0001 C CNN
+F 3 "" H 4475 4000 60  0000 C CNN
+	1    4475 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 P1
+U 1 1 56F4CC2F
+P 5950 2700
+F 0 "P1" H 5950 2900 50  0000 C CNN
+F 1 "CONN_01X03" V 6050 2700 50  0000 C CNN
+F 2 "RMC_pcb_header:pin_header_2.54mm_1x3" H 5950 2700 50  0001 C CNN
+F 3 "" H 5950 2700 50  0000 C CNN
+	1    5950 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P W2
+U 1 1 56F4CC6C
+P 1950 3675
+F 0 "W2" H 1950 3945 50  0000 C CNN
+F 1 "TEST_1P" H 1950 3875 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 2150 3675 50  0001 C CNN
+F 3 "" H 2150 3675 50  0000 C CNN
+	1    1950 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P W1
+U 1 1 56F4CCAB
+P 1525 3700
+F 0 "W1" H 1525 3970 50  0000 C CNN
+F 1 "TEST_1P" H 1525 3900 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 1725 3700 50  0001 C CNN
+F 3 "" H 1725 3700 50  0000 C CNN
+	1    1525 3700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1525 3700
+NoConn ~ 1950 3675
+Wire Wire Line
+	4100 2400 3875 2400
+Wire Wire Line
+	3875 2400 3875 2475
+Wire Wire Line
+	3825 4150 3725 4150
+Wire Wire Line
+	3725 4150 3725 4350
+Wire Wire Line
+	3725 4350 5200 4350
+Wire Wire Line
+	5200 4350 5200 4150
+Wire Wire Line
+	5075 4150 5475 4150
+Wire Wire Line
+	5750 2700 5225 2700
+Wire Wire Line
+	5225 2700 5225 2400
+Wire Wire Line
+	5225 2400 4300 2400
+Wire Wire Line
+	5475 4150 5475 2700
+Connection ~ 5475 2700
+Connection ~ 5200 4150
+Text Label 5750 2700 2    60   ~ 0
+GND
+Wire Wire Line
+	5750 2600 5025 2600
+Wire Wire Line
+	5025 2600 5025 3050
+Wire Wire Line
+	5025 2725 4925 2725
+Wire Wire Line
+	5025 3050 4450 3050
+Connection ~ 5025 2725
+Text Label 5750 2600 2    60   ~ 0
+Vcc
+Wire Wire Line
+	5075 3850 5275 3850
+Wire Wire Line
+	5275 3850 5275 2800
+Wire Wire Line
+	5275 2800 5750 2800
+Text Label 5750 2800 2    60   ~ 0
+Sig
+Wire Wire Line
+	3875 2875 3875 2975
+Wire Wire Line
+	3875 2975 4300 2975
+Wire Wire Line
+	4300 2975 4300 2725
+Wire Wire Line
+	4300 2725 4725 2725
+Wire Wire Line
+	4250 3050 3675 3050
+Wire Wire Line
+	3675 3050 3675 3850
+Wire Wire Line
+	3675 3850 3825 3850
+$Comp
+L TEST_1P W3
+U 1 1 56F4D2CB
+P 1525 2850
+F 0 "W3" H 1525 3120 50  0000 C CNN
+F 1 "TEST_1P" H 1525 3050 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 1725 2850 50  0001 C CNN
+F 3 "" H 1725 2850 50  0000 C CNN
+	1    1525 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P W4
+U 1 1 56F4D308
+P 1925 2800
+F 0 "W4" H 1925 3070 50  0000 C CNN
+F 1 "TEST_1P" H 1925 3000 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 2125 2800 50  0001 C CNN
+F 3 "" H 2125 2800 50  0000 C CNN
+	1    1925 2800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1525 2850
+NoConn ~ 1925 2800
+$EndSCHEMATC
